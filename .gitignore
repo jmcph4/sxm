@@ -1,0 +1,5 @@
+*.tmp
+msg.tmp
+*.secret
+*.key
+
