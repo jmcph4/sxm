@@ -1,5 +1,6 @@
 function sxm_plot(S)
-    % sxm_plot  Plots the structure S (wrapper for built-in `plot` function).
+    % sxm_plot  Plots the structure S (wrapper for built-in `plot` 
+    % function).
     %
     % Parameters
     % S - struct

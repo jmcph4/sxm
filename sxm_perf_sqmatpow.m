@@ -1,6 +1,6 @@
 function sxm_perf_sqmatpow(n, p)
-    % sxm_perf_sqmatsq  Times the execution of raising an nxn matrix to the pth power. Part
-    % of performance testing extensions.
+    % sxm_perf_sqmatsq  Times the execution of raising an nxn matrix to the
+    % pth power. Part of performance testing extensions.
     %
     % Parameters
     %     n - dimension of square matrix
