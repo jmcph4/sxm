@@ -1,4 +1,4 @@
-classdef sxm_Set
+classdef sxm_Set < handle
     %SXM_SET Implements the Set ADT.
     properties (SetAccess=protected)
         card
@@ -7,7 +7,7 @@ classdef sxm_Set
     
     methods
         function self = sxm_Set(L)
-            self.elems = unique(L);
+            self.elems = sxm_List(unique(L));
             self.card = length(self.elems);
         end
         
@@ -16,11 +16,21 @@ classdef sxm_Set
         end
         
         function s = size(S)
-            s = S.card;
+            s = [1 S.card];
         end
         
         function r = in(S, e)
             r = sxm_in(e, S.elems);
+        end
+        
+        function add(S, e)
+            S.elems.append(e);
+            S.card = length(S.elems);
+        end
+        
+        function remove(S, e)
+            S.elems.remove(e);
+            S.card = length(S.elems);
         end
         
         function U = union(S, T)
