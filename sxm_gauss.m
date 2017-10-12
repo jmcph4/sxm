@@ -4,7 +4,7 @@
 %   computational complexity of this algorithm is O(n^3) (with A a nxn
 %   matrix).
 %
-% See also SXM_ERRORMAG
+%   See also SXM_ERRORMAG
 function x = sxm_gauss(A, b)
     % check if A is singular
     if det(A) == 0
